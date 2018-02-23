@@ -176,4 +176,10 @@ public class Flight implements Serializable{
 	public void setArrivalTime(String arrivalTime) {
 		this.arrivalTime = arrivalTime;
 	}
+	@Override
+	public String toString() {
+		return "Flight [id=" + id + ", city=" + city + ", country=" + country + ", company=" + company + ", gate="
+				+ gate + ", numberFlight=" + numberFlight + ", amount=" + amount + ", typeFlight=" + typeFlight
+				+ ", arrivalTime=" + arrivalTime + ", departureTime=" + departureTime + ", tax=" + tax + "]";
+	}
 }
