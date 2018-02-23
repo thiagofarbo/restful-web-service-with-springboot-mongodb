@@ -15,7 +15,6 @@ import br.com.webwork.repository.FlightRepository;
  *
  */
 
-
 @Service
 public class FlightService {
 	
