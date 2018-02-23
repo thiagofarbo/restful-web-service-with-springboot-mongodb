@@ -50,8 +50,8 @@ public class FlightService {
 		.withNumbetFlight(flight.getNumberFlight())
 		.withAmount(flight.getAmount())
 		.withTypeFlight(flight.getTypeFlight())
-		.withHorarioSaida(flight.getHorarioSaida())
-		.withHorarioChegada(flight.getHorarioChegada())
+		.withDepartureTime(flight.getDepartureTime())
+		.withArrivalTime(flight.getArrivalTime())
 		.withTax(flight.getTax())
 		.build();
 		

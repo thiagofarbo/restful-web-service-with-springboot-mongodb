@@ -26,8 +26,8 @@ public class Flight implements Serializable{
 	private Long numberFlight;
 	private BigDecimal amount;
 	private String typeFlight;
-	private String horarioChegada;
-	private String horarioSaida;
+	private String arrivalTime;
+	private String departureTime;
 	private Boolean tax;
 	
 	public Flight() {}
@@ -42,8 +42,8 @@ public class Flight implements Serializable{
 		private Long numberFlight;
 		private BigDecimal amount;
 		private String typeFlight;
-		private String horarioChegada;
-		private String horarioSaida;
+		private String arrivalTime;
+		private String departureTime;
 		private Boolean tax;
 		
 	    public FlightBuilder(String id) {
@@ -78,12 +78,12 @@ public class Flight implements Serializable{
             this.typeFlight = typeFlight;
             return this;
         }
-	    public FlightBuilder withHorarioChegada(String horarioChegada) {
-            this.horarioChegada = horarioChegada;
+	    public FlightBuilder withArrivalTime(String arrivalTime) {
+            this.arrivalTime = arrivalTime;
             return this;
         }
-	    public FlightBuilder withHorarioSaida(String horarioSaida) {
-            this.horarioSaida = horarioSaida;
+	    public FlightBuilder withDepartureTime(String departureTime) {
+            this.departureTime = departureTime;
             return this;
         }
 	    public FlightBuilder withTax(Boolean tax) {
@@ -102,8 +102,8 @@ public class Flight implements Serializable{
 			flight.numberFlight = this.numberFlight;
 			flight.amount = this.amount;
 			flight.typeFlight = this.typeFlight;
-			flight.horarioSaida = this.horarioSaida;
-			flight.horarioChegada = this.horarioChegada;
+			flight.departureTime = this.departureTime;
+			flight.arrivalTime = this.arrivalTime;
 			flight.tax = this.tax;
 			
             return flight;
@@ -152,18 +152,6 @@ public class Flight implements Serializable{
 	public void setTypeFlight(String typeFlight) {
 		this.typeFlight = typeFlight;
 	}
-	public String getHorarioChegada() {
-		return horarioChegada;
-	}
-	public void setHorarioChegada(String horarioChegada) {
-		this.horarioChegada = horarioChegada;
-	}
-	public String getHorarioSaida() {
-		return horarioSaida;
-	}
-	public void setHorarioSaida(String horarioSaida) {
-		this.horarioSaida = horarioSaida;
-	}
 	public Boolean getTax() {
 		return tax;
 	}
@@ -175,5 +163,17 @@ public class Flight implements Serializable{
 	}
 	public void setGate(String gate) {
 		this.gate = gate;
+	}
+	public String getDepartureTime() {
+		return departureTime;
+	}
+	public void setDepartureTime(String departureTime) {
+		this.departureTime = departureTime;
+	}
+	public String getArrivalTime() {
+		return arrivalTime;
+	}
+	public void setArrivalTime(String arrivalTime) {
+		this.arrivalTime = arrivalTime;
 	}
 }
