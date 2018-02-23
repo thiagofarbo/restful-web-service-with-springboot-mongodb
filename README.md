@@ -9,6 +9,7 @@ For default the SpringBoot run on port 8080, make sure you do not have any serve
 
 **How to access my database**
 For this projects was used a mongoDB database running on docker.
+To build your own mongoDB running on docker, you can access the link below. https://medium.com/@pablo_ezequiel/creating-a-docker-image-with-mongodb-4c8aa3f828f2
 
 **How to execute requests from REST API**
 You can use your own browser to do it or you can use an application to simulate it; for example: Postman: link for download > https://www.getpostman.com/
