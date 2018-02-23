@@ -12,5 +12,9 @@ public class WebServiceFlightsApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
+	
+	public void testJenkins() {
+		
+	}
 
 }
